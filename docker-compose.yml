@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sw-galaxy-manager-db
+    ports:
+      - "9001:3306"
