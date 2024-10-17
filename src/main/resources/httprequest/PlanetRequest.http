@@ -1,0 +1,36 @@
+### POST request to planets
+POST http://localhost:8080/planets
+Content-Type: application/json
+
+{
+  "name": "Tatooine",
+  "climate": "arid",
+  "terrain": "desert",
+  "population": 200000
+}
+###
+
+### GET request to planets
+GET http://localhost:8080/planets
+
+###
+
+### GET request to planets by id
+GET http://localhost:8080/planets/1
+###
+
+### PUT request to planets by id
+PUT http://localhost:8080/planets/1
+Content-Type: application/json
+
+{
+  "name": "Tatooine",
+  "climate": "arid",
+  "terrain": "desert",
+  "population": 300000
+}
+###
+
+### DELETE request to planets by id
+DELETE http://localhost:8080/planets/1
+###
